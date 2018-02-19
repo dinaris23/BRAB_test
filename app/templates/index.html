@@ -4,7 +4,9 @@
         <title>David Landing</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" href="css/main.min.css" rel="stylesheet" media="screen">    
+        <link type="text/css" href="css/main.min.css" rel="stylesheet" media="screen">  
+        <link rel="stylesheet" type="text/css" href="css/libs/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/libs/slick-theme.css"/>  
     </head>
 
     <body>
@@ -39,8 +41,17 @@
         <footer class="footer">
         {% include "_footer.html" %}
         </footer>    
-        <script src="libs/jquery-3.3.1.min.js"></script> 
-        <script src="libs/slick.js"></script>
     </div>
+    <script src="libs/jquery-3.3.1.min.js"></script> 
+    <script src="libs/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.about_slides').slick({
+            nextArrow: '.about_slider__next',
+            prevArrow: '.about_slider__prev',
+            adaptiveHeight: true
+            });
+        });
+    </script>
     </body>
 </html>

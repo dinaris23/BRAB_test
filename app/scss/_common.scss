@@ -48,7 +48,18 @@ body {
             margin-right: 40px;
         }
     }
-    .col-b {
-        width: 50%;
-    }
+}
+.col-b {
+    width: 50%;
+}
+.section-title{
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: $green-color;
+    margin-bottom: 40px;
+}
+img {
+    width: 100%;
+    height: auto;
 }

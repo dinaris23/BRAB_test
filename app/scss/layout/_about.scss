@@ -1,0 +1,32 @@
+.about {
+    text-align: center;
+    padding-top: 80px;
+    &_container {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+    &_text {
+        font-size: 19px;
+    }
+    &_slider {
+        margin: 0 auto;
+        position: relative;
+        &__next, &__prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &__prev {
+            left: -100px;
+        }
+        &__next {
+            right: -100px;
+        }
+     
+    }
+       
+    &_slide {
+       
+     
+    }
+}
