@@ -1,0 +1,67 @@
+.header {
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+    &_logo {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: $title-font;
+    }
+    &_menu {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    &_link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $text-color;
+    }
+    &_item {
+        margin: 0;
+        margin-left: 10px;
+        list-style: none;
+        &:after {
+            content: '\2022';
+            padding-left: 5px;
+        }
+        &:last-child:after {
+            content: none;
+            padding-left: 0;
+        }
+    }
+    &_title {
+        margin: 0;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: $green-color;
+        margin-bottom: 40px;
+    }
+    &_content {
+        background: url('../img/header-banner.png') no-repeat center;
+        background-size: cover;
+        height: 0;
+        padding-bottom: 45%;
+        position: relative;
+    }
+    &_info {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &_text {
+        padding-right: 20%;
+        color: #4e4e4e;
+        font-size: 19px;
+    }
+    &_button {
+        margin-top: 85px;
+    }
+
+}
