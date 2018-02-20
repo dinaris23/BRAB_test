@@ -20,6 +20,7 @@ body {
     padding: 20px;
     outline: none;
     border-style: none;
+    text-transform: uppercase;
     line-height: 0.15;
     box-sizing: border-box;
     &__green {
@@ -42,6 +43,11 @@ body {
             color: #fff;  
         }
     }
+    &__gray-tr {
+        border: 1px solid $gray-color;
+        color: $gray-color;
+    
+    }
     &__hd {
         text-transform: uppercase;
         &:first-child {
@@ -57,9 +63,14 @@ body {
     font-size: 28px;
     text-transform: uppercase;
     color: $green-color;
-    margin-bottom: 40px;
+    &__gray {
+        color: $gray-color;
+    }
 }
 img {
     width: 100%;
     height: auto;
+}
+section {
+    padding: 40px 0;
 }
