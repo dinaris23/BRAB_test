@@ -1,0 +1,51 @@
+.infographic {
+    background: url('../img/info_bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 70%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    &:after {
+        content:'';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        position: absolute;
+    }
+    &_header {
+        padding-top: 50px; 
+    }
+    &_description {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &_content {
+        display: flex;
+        justify-content: space-around;
+    }
+    &_icon {
+        position: relative;
+        &:before {
+            content: attr(data-time);
+            position: absolute;
+            display: block;
+            font-size: 50px;
+            color: $green-color;
+            font-family: $title-font;
+
+        }
+        &:after {
+            content: attr(data-hours);
+            position: absolute;
+            display: block;
+            font-size: 17px;
+            color: $green-color;
+            font-family: $title-font;
+        }
+    }
+}

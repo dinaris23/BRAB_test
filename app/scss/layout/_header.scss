@@ -44,9 +44,6 @@
     }
     &_info {
         width: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
     }
     &_text {
         padding-right: 20%;
@@ -56,5 +53,10 @@
     &_button {
         margin-top: 85px;
     }
+  &_container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }  
 
 }
