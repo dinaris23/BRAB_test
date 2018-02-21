@@ -34,7 +34,7 @@
             content: attr(data-time);
             position: absolute;
             display: block;
-            font-size: 50px;
+            @include fontSize(50);
             color: $green-color;
             font-family: $title-font;
 
@@ -43,7 +43,7 @@
             content: attr(data-hours);
             position: absolute;
             display: block;
-            font-size: 17px;
+            @include fontSize(17);
             color: $green-color;
             font-family: $title-font;
         }

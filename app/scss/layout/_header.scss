@@ -19,7 +19,7 @@
     &_link {
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 14px;
+        @include fontSize(14);
         color: $text-color;
     }
     &_item {
@@ -48,7 +48,7 @@
     &_text {
         padding-right: 20%;
         color: #4e4e4e;
-        font-size: 19px;
+        @include fontSize(19);
     }
     &_button {
         margin-top: 85px;

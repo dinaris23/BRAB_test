@@ -16,7 +16,7 @@
         }
     }
     &_title {
-        font-size: 20px;
+        @include fontSize(20);
         text-transform: uppercase;
     }
 }

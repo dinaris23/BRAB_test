@@ -6,7 +6,7 @@
         margin: 0 auto;
     }
     &_text {
-        font-size: 19px;
+        @include fontSize(19);
     }
     &_slider {
         margin: 0 auto;
