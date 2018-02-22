@@ -6,8 +6,7 @@
     }
     &_block {
         display: flex;
-        justify-content: space-between;
-        width: 60%;
+        justify-content: space-around;
         margin: 0 auto;
     }
     &_city {
@@ -18,4 +17,5 @@
         margin: 0;
         margin-top: 45px;
     }
+    
 }

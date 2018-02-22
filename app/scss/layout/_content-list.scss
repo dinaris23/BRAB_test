@@ -1,0 +1,40 @@
+.content-list {
+    text-align: center;
+    &_main {
+        margin-top: 80px;
+    }
+    &_item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 80px;
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+        }
+    }
+    &_text {
+        padding-top: 80px;
+        padding-left: 70px;
+        padding-right: 70px;
+        position: relative;
+    }
+    &_img {
+        object-fit: cover;
+        width: 420px;
+        height: 420px;
+    }
+    &_subtitle {
+        @include fontSize(30);
+        position: relative;
+        margin: 0;
+    }
+    &_number {
+        position: absolute;
+        @include fontSize(200);
+        color: lighten($green-color, 30%);
+        z-index: -1;
+        margin: 0;
+        bottom: 48%;
+    }
+}

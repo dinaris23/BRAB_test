@@ -28,24 +28,41 @@
         display: flex;
         justify-content: space-around;
     }
-    &_icon {
-        position: relative;
+    &_item {
+        
         &:before {
             content: attr(data-time);
-            position: absolute;
+            position: relative;
             display: block;
             @include fontSize(50);
             color: $green-color;
             font-family: $title-font;
+            top: 35%;
+           
 
         }
         &:after {
             content: attr(data-hours);
-            position: absolute;
+            position: relative;
             display: block;
             @include fontSize(17);
             color: $green-color;
             font-family: $title-font;
+            bottom: 35%;
+         
         }
+    }
+    &_text {
+        color: $green-color;
+        text-align: center;
+    }
+    &_subtitle {
+        text-transform: uppercase;
+        color: $green-color;
+        @include fontSize(24);
+        margin-bottom: 70px;
+    }
+    &_b {
+        @include fontSize(48);
     }
 }
