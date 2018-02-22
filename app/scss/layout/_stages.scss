@@ -1,0 +1,51 @@
+.stages {
+    background: lighten($green-color, 30%);
+    text-align: center;
+    &_content {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 50px;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    &_item {
+        @include fontSize(19);
+        font-weight: bold;
+        flex-basis: 30%;
+        & span {
+            @include fontSize(16);
+            font-weight: normal;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+    &_divider {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        margin-bottom: 40px;
+        &:before {
+            content: "";
+            display: inline-block;
+            background: $green-color;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            z-index: -10;
+        }
+    }
+    &_count {
+        display: inline-block;
+        @include fontSize(25);
+        border: 2px solid $green-color;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $green-color;
+        background: lighten($green-color, 30%);
+    }
+}
