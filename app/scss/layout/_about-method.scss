@@ -1,0 +1,21 @@
+.about-method {
+    text-align: center;
+    &_content {
+        margin-top: 80px;
+    }
+    &_item {
+        display: flex;
+        justify-content: space;
+        align-items: center;
+        margin-bottom: 75px;
+    }
+    &_img {
+        width: 110px;
+        height: auto;
+        object-fit: contain;
+    }
+    &_text {
+        text-align: left;
+        margin-left: 65px;
+    }
+}
