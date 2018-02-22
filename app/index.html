@@ -248,26 +248,55 @@
         </section>
         <section class="footer-contacts">
         <div class="container contacts_container">
-        <div class="contacts_header">
-            <h2 class="section-title">Записаться на прием</h2>
-            <p class="contacts_description">Позвоните в любое из наших отделений, ответим на все вопросы или запишем на прием к доктору</p>
+    <div class="contacts_header">
+        <h2 class="section-title">Записаться на прием</h2>
+        <p class="contacts_description">Позвоните в любое из наших отделений, ответим на все вопросы или запишем на прием к доктору</p>
+    </div>
+    <div class="contacts_block">
+        <div class="contacts_adress">
+            <div class="contacts_city">Ивано-Франковск</div>
+            <span class="contacts_info">ул.Черновола<br>(0342) 74-45-40</span>
         </div>
-        <div class="contacts_block">
-            <div class="contacts_adress">
-                <div class="contacts_city">Ивано-Франковск</div>
-                <span class="contacts_info">ул.Черновола<br>(0342) 74-45-40</span>
-            </div>
-            <div class="contacts_adress">
-                <div class="contacts_city">Киев</div>
-                <span class="contacts_info">м.Лукьяновка, КПИ, Осокорки, Позняки<br>(044) 574-88-86</span>
-            </div>
-            <div class="contacts_adress">
-                <div class="contacts_city">Львов</div>
-                <span class="contacts_info">ул.Кульпарковская<br>(032) 254-03-46</span>
-            </div>
+        <div class="contacts_adress">
+            <div class="contacts_city">Киев</div>
+            <span class="contacts_info">м.Лукьяновка, КПИ, Осокорки, Позняки<br>(044) 574-88-86</span>
         </div>
-        <p class="contacts_description">Заполните форму и мы свяжемся с вами, ответим на все вопросы или запишем на прием к доктору</p>
+        <div class="contacts_adress">
+            <div class="contacts_city">Львов</div>
+            <span class="contacts_info">ул.Кульпарковская<br>(032) 254-03-46</span>
         </div>
+    </div>
+    <p class="contacts_description">Заполните форму и мы свяжемся с вами, ответим на все вопросы или запишем на прием к доктору</p>
+</div>
+    <div class="container container__b">
+    <div class="footer-contacts_form"></div>
+        <form class="contact-form">
+            <div class="contact-form_wrap">
+                <div class="contact-form_input">
+                    <label for="city">Выберите отделение</label>
+                    <select name="select-city" id="city">
+                        <option>Выберите удобное для вас отделение</option>
+                        <option>Киев</option>
+                        <option>Львов</option>
+                        <option>Ивано-Франковск</option>
+                    </select>
+                </div>
+                <div class="contact-form_input">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" placeholder="Имя">
+                </div>
+                <div class="contact-form_input">
+                    <label for="name">Телефон</label>
+                    <input type="text" id="name" placeholder="+380">
+                </div>
+            </div> 
+            <div class="contact-form_button">
+                <button class="btn btn__green contact-form_btn" type="submit">Отправить заявку</button>
+            </div> 
+        </form>
+    </div>
+
+</div>
 
         </section>
         <footer class="footer">
