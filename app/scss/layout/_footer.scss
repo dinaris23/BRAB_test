@@ -1,0 +1,11 @@
+.footer {
+    color: #fff;
+    background: $text-color;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    &_copyright {
+        margin-left: 10%;
+        font-style: inherit;
+    }
+
+}
